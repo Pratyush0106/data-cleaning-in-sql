@@ -120,7 +120,7 @@
 		delete from athlete_events where Medal like 'N%'
 
 
-		--finding how many time a name is apeearing but not the other column value 
+		--finding how many time a name is appearing but not the other column value 
 		select id,name, count(*) from athlete_events group by id,name having count(*) > 1
 
 
@@ -129,5 +129,5 @@
 		select * from athlete_events
 
 
-		--before cleaning  the data containg more than 2lakhs rows now it's clean and contain less rows
+		--before cleaning  the data contain more than 2lakhs rows now it's clean and contain less rows
 		select count(id) from athlete_events
